@@ -1,8 +1,8 @@
 ##organize these laTex output.
 import os
 
-##enter the directory here
-path='/home/andres/Latex Documents/'
+##ENTER THE DIRECTORY FOR LATEX DOCUMENTS HERE
+path='/home/user/Latex Documents/'
 myfiles=os.listdir(path)
 
 ##write to a python dictionary of the form {mathdoc:[mathdoc.tex, mathdoc.pdf,...]} 
