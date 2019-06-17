@@ -2,7 +2,7 @@
 import os
 
 ##ENTER THE DIRECTORY FOR LATEX DOCUMENTS HERE
-path='/home/user/Latex Documents/'
+path='/home/user/Latex Documents/' ##do not forget the final backslash
 myfiles=os.listdir(path)
 
 ##write to a python dictionary of the form {mathdoc:[mathdoc.tex, mathdoc.pdf,...]} 
@@ -11,7 +11,7 @@ myfiles=os.listdir(path)
 def make_dict(directory,newfiles={}):
     for file_ in directory:
         temp=file_.split('.')
-        if len(temp)==1 or temp[1]=='py':
+        if len(temp)==1 or temp[1]=='py': ##ignore this program and ignore if there is no extension on the file (ignore folders).
             pass
         else:
             if temp[0] not in newfiles:
