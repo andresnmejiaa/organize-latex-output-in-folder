@@ -7,4 +7,4 @@ For example, if we have math.aux, math.pdf,math.tex, the script creates a new di
  it moves all three files math.aux, math.pdf,math.tex  inside that directory
  (although it will grab other files as well as long as they are of the form math.xxx.) 
  
-I used this to organize my latex documents, so that there were no loose files flying around. You can throw this into your IDE at compile time to run it automatically.
+I used this to organize my latex documents, so that there were no loose files flying around. You can throw this into your IDE settings so that it runs after a PDFLatex compile
